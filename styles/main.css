@@ -1,0 +1,48 @@
+.container {
+  width: 800px;
+  height: 800px;
+  margin: 0 auto; }
+
+.stopwatch {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .stopwatch__minute, .stopwatch__second, .stopwatch__pin {
+    position: absolute;
+    border-radius: 20px; }
+  .stopwatch__minute, .stopwatch__second {
+    left: 51%;
+    width: 10px;
+    transform-origin: bottom center; }
+  .stopwatch__minute {
+    top: 210px;
+    height: 200px;
+    background-color: #003f5c;
+    -webkit-animation: clock-ticking 3600s linear infinite;
+            animation: clock-ticking 3600s linear infinite; }
+  .stopwatch__second {
+    top: 110px;
+    height: 300px;
+    background-color: #bc5090;
+    -webkit-animation: clock-ticking 60s linear infinite;
+            animation: clock-ticking 60s linear infinite; }
+  .stopwatch__pin {
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: #ff6361; }
+
+@-webkit-keyframes clock-ticking {
+  from {
+    transform: rotate(360deg); }
+  to {
+    transform: rotate(720deg); } }
+
+@keyframes clock-ticking {
+  from {
+    transform: rotate(360deg); }
+  to {
+    transform: rotate(720deg); } }
+
+/*# sourceMappingURL=main.css.map */
